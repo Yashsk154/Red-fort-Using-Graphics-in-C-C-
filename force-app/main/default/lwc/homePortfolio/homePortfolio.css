@@ -1,0 +1,167 @@
+/* 🔥 Animated Background */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #1a1a2e, #16213e);
+    animation: gradientShift 6s ease infinite;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🌟 Responsive Profile Card */
+.profile-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🌟 Profile Picture */
+.circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffcc00;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.circular-image:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* 🔤 Responsive Text Styling */
+.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.9);
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f39c12;
+}
+
+.description {
+    font-size: 1rem;
+    color: #dfe6e9;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* 🚀 Responsive Design */
+@media screen and (max-width: 1024px) {
+    .home-container {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .profile-card {
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .circular-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+    
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+/* 📱 Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+    .home-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .profile-card {
+        max-width: 320px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .circular-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .circular-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,26 @@
+.text-container {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Gradient Text Effect */
+.dynamic-text {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff3e41);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    animation: text-glow 1s infinite alternate;
+}
+
+/* Blinking Glow Effect */
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 127, 179, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 62, 65, 1);
+    }
+}

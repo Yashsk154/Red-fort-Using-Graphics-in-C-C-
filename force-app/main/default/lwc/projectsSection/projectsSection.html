@@ -1,0 +1,21 @@
+<template>
+    <div class="projects-container">
+        <h1 class="section-title">Projects</h1>
+        <div class="projects-grid">
+            <template for:each={projects} for:item="project">
+                <div key={project.id} class="project-card">
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <span class="project-title">{project.title}</span>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <p class="project-description">{project.description}</p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
