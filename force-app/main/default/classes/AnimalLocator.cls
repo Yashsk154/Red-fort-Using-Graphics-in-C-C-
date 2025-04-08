@@ -24,7 +24,7 @@ public class JSONOutput{
         //Map<String,Object> map_results = (Map<String,Object>) JSON.deserializeUntyped(response.getBody());
         jsonOutput results = (jsonOutput) JSON.deserialize(response.getBody(), jsonOutput.class);
         //Object results = (Object) map_results.get('animal');
-		system.debug('results= ' + results.animal);
+		//system.debug('results= ' + results.animal);
         return(results.animal.name);
     }
 }
